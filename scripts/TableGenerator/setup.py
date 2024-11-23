@@ -9,6 +9,6 @@ setup(
    author_email='fynnschotten@gmail.com',
    packages=['tablegenerator'],
    entry_points={
-      'console_scripts': ['tablegenerator=main:main'],
+      'console_scripts': ['tablegenerator=TableGenerator.main:main'],
    }
 )

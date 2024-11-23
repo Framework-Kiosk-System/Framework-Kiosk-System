@@ -11,5 +11,5 @@ def main():
     print("That worked")
     print(args)
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    print("Yarak")
