@@ -1,5 +1,4 @@
-import unittest
-
+import unittest, os
 from TableGenerator.DatabaseConnector import DatabaseConnector
 
 class DatabaseConnectorTest(unittest.TestCase):
@@ -8,4 +7,5 @@ class DatabaseConnectorTest(unittest.TestCase):
         self.db_connector = DatabaseConnector()
     
     def CreateTest(self):
-        pass
+        self.db_connector.CreateDatabase("Testing/test.db")
+        self.assertEqual(os.path.exists("Testing/test.db"), True)
